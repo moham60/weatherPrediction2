@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Predict Weather based on location" />
+    <title>Predict Weather</title>
+    <!--bootstrap link-->
+    <link
+      rel="stylesheet"
+      href="./js/bootstrap.min.js" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!--custom style-->
+    <link rel="stylesheet" href="./css/custom.min.css" />
+  </head>
+  <body>
+    <nav class="navbar py-4 navbar-expand-lg navbar-light bg-black">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#"
+          ><img src="./images/logo.png" alt="" />
+          <div class="ms-3 text-white">
+            <span class="d-block">Weather</span>
+            <span class="d-block custom">tagline goes here</span>
+          </div>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto text-white">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Live Cameras</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h3 class="message text-danger"></h3>
+        <div class="inpt position-relative">
+          <input
+            type="text"
+            id="cityInpt"
+            placeholder="Find your Location"
+            autocomplete="off"
+            class="w-100 rounded border-0 p-3 bg-dark text-white rounded-5" />
+          <button
+            class="btn btn-primary rounded-5 px-5 position-absolute end-0 top-50 translate-middle-y me-3"
+            id="find">
+            Find
+          </button>
+        </div>
+        <div class="row mt-4 text-white"></div>
+      </div>
+    </main>
+    <footer class="py-5 bg-dark" id="contact">
+      <div class="container">
+        <div class="d-flex justify-content-between">
+          <div class="inpt position-relative w-75">
+            <input
+              type="text"
+              class="form-control rounded-5 p-2"
+              placeholder="Enter your Email to Subscribe" />
+            <button
+              class="btn btn-primary position-absolute rounded-5 end-0 top-50 translate-middle-y me-1">
+              Subscribe
+            </button>
+          </div>
+          <div class="icons d-flex align-items-center gap-2">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              aria-label="facebookIcon"
+              class="text-decoration-none btn btn-primary">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/alkingg289/"
+              target="_blank"
+              aria-label="instagramIcon"
+              class="text-decoration-none btn btn-danger">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/mohammed-abdelwahab-mohamed-9b6656232/"
+              target="_blank"
+              aria-label="linkedinIcon"
+              class="text-decoration-none btn btn-light">
+              <i class="fa-brands fa-linkedin-in text-black"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="text-center mt-4">
+        Copyright 2014 Company name. Designed by Themezy. All rights reserved
+      </p>
+    </footer>
+
+    <script src="./js/main.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+  </body>
+</html>
